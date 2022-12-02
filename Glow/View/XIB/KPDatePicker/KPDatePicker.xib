@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+        <array key="Gotham-Medium.ttf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Odq-7a-lsb" customClass="KPDatePicker" customModule="NopCommerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTd-wC-feG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xxx-Wh-aqN">
+                    <rect key="frame" x="0.0" y="389" width="375" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEv-l0-k0O" customClass="JPWidthButton" customModule="NopCommerce" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Wrt-53-hOz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="19"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.37254901960784315" green="0.69803921568627447" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="letterSpace">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelTapWithSender:" destination="Odq-7a-lsb" eventType="touchUpInside" id="00q-H2-lVY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsq-DZ-LHI" customClass="JPWidthButton" customModule="NopCommerce" customModuleProvider="target">
+                            <rect key="frame" x="295" y="0.0" width="80" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Teb-hm-rd7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="19"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="0.37254901960784315" green="0.69803921568627447" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doneTapWithSender:" destination="Odq-7a-lsb" eventType="touchUpInside" id="a0N-It-wMx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IEv-l0-k0O" firstAttribute="leading" secondItem="Xxx-Wh-aqN" secondAttribute="leading" id="1MX-kn-2Mj"/>
+                        <constraint firstAttribute="bottom" secondItem="IEv-l0-k0O" secondAttribute="bottom" id="75w-Uw-Uo2"/>
+                        <constraint firstAttribute="trailing" secondItem="Qsq-DZ-LHI" secondAttribute="trailing" id="DzM-3w-awj"/>
+                        <constraint firstItem="Qsq-DZ-LHI" firstAttribute="top" secondItem="Xxx-Wh-aqN" secondAttribute="top" id="TDl-I5-oXR"/>
+                        <constraint firstItem="IEv-l0-k0O" firstAttribute="top" secondItem="Xxx-Wh-aqN" secondAttribute="top" id="WXp-A0-fTW"/>
+                        <constraint firstAttribute="bottom" secondItem="Qsq-DZ-LHI" secondAttribute="bottom" id="fwo-Y7-7FL"/>
+                        <constraint firstAttribute="height" constant="45" id="gWi-AV-n5M"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xp-oY-Itz">
+                    <rect key="frame" x="0.0" y="434" width="375" height="233"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPQ-Py-Nwb">
+                    <rect key="frame" x="0.0" y="434" width="375" height="233"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="O8p-Gw-Wpc">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="233"/>
+                            <connections>
+                                <action selector="dataPickerValueChangeWithSender:" destination="Odq-7a-lsb" eventType="valueChanged" id="u0n-MR-Eh7"/>
+                            </connections>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="O8p-Gw-Wpc" firstAttribute="top" secondItem="YPQ-Py-Nwb" secondAttribute="top" id="3mD-76-gcd"/>
+                        <constraint firstItem="O8p-Gw-Wpc" firstAttribute="leading" secondItem="YPQ-Py-Nwb" secondAttribute="leading" id="Qi4-Av-EfP"/>
+                        <constraint firstAttribute="trailing" secondItem="O8p-Gw-Wpc" secondAttribute="trailing" id="R7j-pQ-QaI"/>
+                        <constraint firstAttribute="bottom" secondItem="O8p-Gw-Wpc" secondAttribute="bottom" id="VPE-x1-gD8"/>
+                        <constraint firstAttribute="height" constant="233" id="o2w-17-Upa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vTd-wC-feG" firstAttribute="leading" secondItem="Odq-7a-lsb" secondAttribute="leading" id="2Ng-eT-Yzc"/>
+                <constraint firstItem="P9V-OR-zWe" firstAttribute="bottom" secondItem="YPQ-Py-Nwb" secondAttribute="bottom" id="8SV-Tj-GdG"/>
+                <constraint firstAttribute="bottom" secondItem="0xp-oY-Itz" secondAttribute="bottom" id="9t1-wo-BNt"/>
+                <constraint firstItem="Xxx-Wh-aqN" firstAttribute="leading" secondItem="Odq-7a-lsb" secondAttribute="leading" id="ETu-Wn-1Fz"/>
+                <constraint firstAttribute="trailing" secondItem="Xxx-Wh-aqN" secondAttribute="trailing" id="Fzs-jy-bSu"/>
+                <constraint firstItem="YPQ-Py-Nwb" firstAttribute="leading" secondItem="Odq-7a-lsb" secondAttribute="leading" id="G7t-XZ-jus"/>
+                <constraint firstAttribute="bottom" secondItem="vTd-wC-feG" secondAttribute="bottom" id="JG3-jk-rxu"/>
+                <constraint firstAttribute="trailing" secondItem="YPQ-Py-Nwb" secondAttribute="trailing" id="Uzg-7H-TWH"/>
+                <constraint firstAttribute="trailing" secondItem="vTd-wC-feG" secondAttribute="trailing" id="XK4-fy-8nm"/>
+                <constraint firstAttribute="trailing" secondItem="0xp-oY-Itz" secondAttribute="trailing" id="Xir-QW-1FZ"/>
+                <constraint firstItem="YPQ-Py-Nwb" firstAttribute="top" secondItem="Xxx-Wh-aqN" secondAttribute="bottom" id="pFW-Pz-Bhs"/>
+                <constraint firstItem="0xp-oY-Itz" firstAttribute="leading" secondItem="Odq-7a-lsb" secondAttribute="leading" id="pUT-AG-5JD"/>
+                <constraint firstItem="0xp-oY-Itz" firstAttribute="top" secondItem="YPQ-Py-Nwb" secondAttribute="top" id="tNC-83-ARm"/>
+                <constraint firstItem="vTd-wC-feG" firstAttribute="top" secondItem="Odq-7a-lsb" secondAttribute="top" id="tTs-kG-R0c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="P9V-OR-zWe"/>
+            <connections>
+                <outlet property="datePicker" destination="O8p-Gw-Wpc" id="BPL-KJ-nap"/>
+                <outlet property="datePickerBottom" destination="8SV-Tj-GdG" id="ZHr-MF-rpy"/>
+                <outlet property="viewOverLay" destination="vTd-wC-feG" id="llh-Kz-3Oi"/>
+                <outletCollection property="horizontalConstraints" destination="o2w-17-Upa" collectionClass="NSMutableArray" id="h9Q-HK-qyW"/>
+                <outletCollection property="horizontalConstraints" destination="gWi-AV-n5M" collectionClass="NSMutableArray" id="G6C-hi-wke"/>
+                <outletCollection property="horizontalConstraints" destination="Teb-hm-rd7" collectionClass="NSMutableArray" id="bZF-MV-Oid"/>
+                <outletCollection property="horizontalConstraints" destination="Wrt-53-hOz" collectionClass="NSMutableArray" id="Y2C-Ll-0SK"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="155"/>
+        </view>
+    </objects>
+</document>
